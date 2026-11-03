@@ -155,7 +155,8 @@ this.dispose();       // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-     javax.swing.JOptionPane.showMessageDialog(null, "Eligió: " + cmbCultivoMente.getSelectedItem());   // TODO add your handling code here:
+     new vista.VentanaProposito().setVisible(true);
+this.dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
