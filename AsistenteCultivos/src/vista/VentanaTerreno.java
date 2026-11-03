@@ -145,12 +145,8 @@ this.dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-try {
-    double area = Double.parseDouble(txtArea.getText());
-    javax.swing.JOptionPane.showMessageDialog(null, "Municipio: " + cmbMunicipio.getSelectedItem() + "\nÁrea: " + area + " ha");
-} catch (NumberFormatException e) {
-    javax.swing.JOptionPane.showMessageDialog(null, "Por favor, ingrese un número válido en el área.");
-}        // TODO add your handling code here:
+new vista.VentanaClima().setVisible(true);
+this.dispose();      // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
