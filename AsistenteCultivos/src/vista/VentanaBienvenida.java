@@ -48,7 +48,6 @@ public class VentanaBienvenida extends javax.swing.JFrame {
 
         jLabel3.setText("¿Cómo quiere llamar a su proyecto?");
 
-        txtNombreUsuario.setText(".");
         txtNombreUsuario.addActionListener(this::txtNombreUsuarioActionPerformed);
 
         jLabel4.setText("¿Es la primera vez que cultiva?");
@@ -63,8 +62,6 @@ public class VentanaBienvenida extends javax.swing.JFrame {
         jButton1.addActionListener(this::jButton1ActionPerformed);
 
         jLabel6.setText("¿Cuál es su nombre?");
-
-        txtNombreProyecto.setText(".");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

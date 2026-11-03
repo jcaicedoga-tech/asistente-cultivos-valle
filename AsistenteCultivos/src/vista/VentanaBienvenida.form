@@ -109,9 +109,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtNombreUsuario">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="."/>
-      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombreUsuarioActionPerformed"/>
       </Events>
@@ -169,9 +166,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtNombreProyecto">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="."/>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>
