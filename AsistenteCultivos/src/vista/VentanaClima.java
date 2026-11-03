@@ -122,14 +122,8 @@ this.dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-try {
-    double altitud = Double.parseDouble(txtAltitud.getText());
-    double temp = Double.parseDouble(txtTemperatura.getText());
-    double lluvia = Double.parseDouble(txtLluvia.getText());
-    javax.swing.JOptionPane.showMessageDialog(null, "Clima capturado correctamente.");
-} catch (NumberFormatException e) {
-    javax.swing.JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números en los campos de clima.");
-}        // TODO add your handling code here:
+new vista.VentanaSuelo().setVisible(true);
+this.dispose();  // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
