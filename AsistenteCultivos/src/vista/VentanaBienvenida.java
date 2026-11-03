@@ -48,7 +48,7 @@ public class VentanaBienvenida extends javax.swing.JFrame {
 
         jLabel3.setText("¿Cómo quiere llamar a su proyecto?");
 
-        txtNombreUsuario.setText("Nombre");
+        txtNombreUsuario.setText(".");
         txtNombreUsuario.addActionListener(this::txtNombreUsuarioActionPerformed);
 
         jLabel4.setText("¿Es la primera vez que cultiva?");
@@ -64,7 +64,7 @@ public class VentanaBienvenida extends javax.swing.JFrame {
 
         jLabel6.setText("¿Cuál es su nombre?");
 
-        txtNombreProyecto.setText("Proyecto");
+        txtNombreProyecto.setText(".");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -128,16 +128,15 @@ public class VentanaBienvenida extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-                                           
-        String nombre = txtNombreUsuario.getText();
-        String proyecto = txtNombreProyecto.getText();
+String nombre = txtNombreUsuario.getText();
+String proyecto = txtNombreProyecto.getText();
 
-        if(nombre.trim().isEmpty() || proyecto.trim().isEmpty()) {
-            javax.swing.JOptionPane.showMessageDialog(null, "Por favor, llene los campos de nombre y proyecto.");
-        } else {
-            javax.swing.JOptionPane.showMessageDialog(null, "¡Bienvenido/a " + nombre + "!\nProyecto: " + proyecto);
-        }
-        
+if(nombre.trim().isEmpty() || proyecto.trim().isEmpty()) {
+    javax.swing.JOptionPane.showMessageDialog(null, "Por favor, llene los campos de nombre y proyecto.");
+} else {
+    new vista.VentanaCatalogo().setVisible(true);
+    this.dispose();
+}
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtNombreUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreUsuarioActionPerformed
